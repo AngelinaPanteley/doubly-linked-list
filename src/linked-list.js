@@ -117,6 +117,3 @@ class LinkedList {
 }
 
 module.exports = LinkedList;
-
-//const list = new LinkedList();
-//list.append(4).reverse().deleteAt(0).clear().insertAt(0, 3);
