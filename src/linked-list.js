@@ -44,9 +44,12 @@ class LinkedList {
 
     insertAt(index, data) {
         var current = this._head;
-        for(var i=0;i<index;i++)
+        for(var i=0;i<index-1;i++)
           current=current.next;
-        current.data=data;
+        var node=new Node(data);
+        node.previous=current;
+        node.next=current.next;
+        current.next=node;
         return this;
     }
 
